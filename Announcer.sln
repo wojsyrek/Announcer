@@ -3,9 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Announcer", "Announcer\Announcer.csproj", "{76C113C2-F1E0-4CB5-BD04-6C60482DA3E5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Announcer", "Announcer\Announcer.csproj", "{76C113C2-F1E0-4CB5-BD04-6C60482DA3E5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnnouncerCore", "AnnouncerCore\AnnouncerCore.csproj", "{53F4456A-39E7-4E66-BC18-0C24D8484EC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnnouncerCore", "AnnouncerCore\AnnouncerCore.csproj", "{53F4456A-39E7-4E66-BC18-0C24D8484EC5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnnouncerService", "AnnouncerService\AnnouncerService.csproj", "{27E24840-5729-44D6-8728-EDCF1E4B49E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnnouncerConsole", "AnnouncerConsole\AnnouncerConsole.csproj", "{928E77F7-CAB0-40AF-85CD-4DB7F76BBA39}"
+	ProjectSection(ProjectDependencies) = postProject
+		{53F4456A-39E7-4E66-BC18-0C24D8484EC5} = {53F4456A-39E7-4E66-BC18-0C24D8484EC5}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +28,14 @@ Global
 		{53F4456A-39E7-4E66-BC18-0C24D8484EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53F4456A-39E7-4E66-BC18-0C24D8484EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53F4456A-39E7-4E66-BC18-0C24D8484EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27E24840-5729-44D6-8728-EDCF1E4B49E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27E24840-5729-44D6-8728-EDCF1E4B49E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27E24840-5729-44D6-8728-EDCF1E4B49E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27E24840-5729-44D6-8728-EDCF1E4B49E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{928E77F7-CAB0-40AF-85CD-4DB7F76BBA39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{928E77F7-CAB0-40AF-85CD-4DB7F76BBA39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{928E77F7-CAB0-40AF-85CD-4DB7F76BBA39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{928E77F7-CAB0-40AF-85CD-4DB7F76BBA39}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
