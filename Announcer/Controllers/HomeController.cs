@@ -1,5 +1,7 @@
 ﻿using System.Diagnostics;
 using Announcer.Models;
+using AnnouncerCore.Models.Home;
+using AnnouncerCore.Models.Manager;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Announcer.Controllers
@@ -15,7 +17,9 @@ namespace Announcer.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var d = new List<QueueModel>();
+
+            return View(d);
         }
 
         public IActionResult Privacy()

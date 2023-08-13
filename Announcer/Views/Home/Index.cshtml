@@ -1,4 +1,46 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model List<AnnouncerCore.Models.Home.QueueModel>
+@{
+	ViewData["Title"] = "Events";
 }
 
+<div class="col-11" id="queue-table">
+	<div class="filters d-flex flex-row justify-content-evenly">
+		<input type="text" placeholder="Software" />
+		<input type="text" placeholder="EAP Reports" />
+		<input type="date" />
+	</div>
+	<table class="col-11">
+		<thead class="">
+			<tr>
+				<th class="">System type</th>
+				<th class="">System name</th>
+				<th class="">Description</th>
+				<th class="">From</th>
+				<th class="">To</th>
+				<th class="">Updating user</th>
+			</tr>
+		</thead>
+		<tbody class="">
+			@foreach (var record in Model)
+			{
+				<tr>
+					<td class="">
+						@record.System.SystemType
+					</td>
+					<td class="">
+						@record.System.SystemName
+					</td>
+					<td class="">
+						@record.DateTimeFrom.ToString("dd.MM.yyyy HH:mm")
+					</td>
+					<td class="">
+						@record.DateTimeTo.ToString("dd.MM.yyyy HH:mm")
+					</td>
+					<td class="">
+						@record.Description
+					</td>
+				</tr>
+			}
+		</tbody>
+	</table>
+</div>
