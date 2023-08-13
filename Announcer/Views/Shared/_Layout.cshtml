@@ -7,11 +7,12 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Announcer.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lineicons-4.0-basic-free/web-font-files/lineicons.css" />
 </head>
 <body class="m-0 d-flex">
     @Html.Partial("_SideNav")
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="container-fluid">
+        <main role="main" class="m-0 d-flex justify-content-center">
             @RenderBody()
         </main>
     </div>
