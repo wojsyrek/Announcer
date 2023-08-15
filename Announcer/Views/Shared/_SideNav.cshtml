@@ -1,12 +1,9 @@
-﻿<div class="vh-100" id="side-nav">
-	<div class="d-flex flex-row mt-2 align-items-center mt-4" id="side-nav-logo">
-		<img src="~/logo.png" class="img-fluid"/>
-	</div>
-	<div class="d-flex flex-column" id="menu-items">
+﻿<div class="vh-100 col-1 side-nav d-flex flex-column">
+
 		<a id="Home"><span>Queue</span></a>
 		<a id="Manager"><span>Manage</span></a>
 		<a id="Configuration"><span>Configure</span></a>
-	</div>
+
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
@@ -15,7 +12,6 @@
 			var z = this.Context.GetRouteData().Values["controller"]?.ToString();
 		}
 		console.log("@z");
-		$("#@z").removeClass("btn-warning").addClass("btn-secondary");
-		$("#@z").children("i").removeClass("border-dark").removeClass("border-light");
+		$("#@z").addClass("a-active");
 	});
 </script>
