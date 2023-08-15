@@ -9,14 +9,18 @@
     <link rel="stylesheet" href="~/Announcer.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/lineicons-4.0-basic-free/web-font-files/lineicons.css" />
 </head>
-<body class="m-0 d-flex">
-    @Html.Partial("_SideNav")
-    <div class="container-fluid">
-        <main role="main" class="m-0 d-flex justify-content-center">
-            @RenderBody()
-        </main>
+<body>
+    <div class="row col-12">
+    @Html.Partial("_Top")
     </div>
-
+    <div class="d-flex flex-row">
+        @Html.Partial("_SideNav")
+        <div class="container-fluid col-11">
+            <main role="main" class="m-0 d-flex justify-content-center">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
